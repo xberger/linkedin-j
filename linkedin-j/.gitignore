@@ -1,0 +1,10 @@
+core/target/
+examples/target/
+build/
+core/.settings/
+examples/.settings/
+.project
+.settings/
+bin/
+dist/
+dev-lib/
