@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.003" errors="63" skipped="0" tests="63" name="com.google.code.linkedinapi.client.LinkedInApiXppClientTest">
+<testsuite failures="0" time="0.004" errors="63" skipped="0" tests="63" name="com.google.code.linkedinapi.client.LinkedInApiXppClientTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_51\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher deploy"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean deploy"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -87,7 +87,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString">
+  <testcase time="0.001" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -191,6 +191,32 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetJobBookmarksSetOfJobField">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
   <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchJobsMapOfSearchParameterStringSetOfJobFieldSetOfFacetFieldIntIntSearchSortOrder">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
@@ -243,7 +269,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdateCommentsString">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileForCurrentUser">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -269,7 +295,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdatesSetOfNetworkUpdateType">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileByIdString">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -295,7 +321,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0.001" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsByIdStringSetOfProfileField">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeopleMapOfSearchParameterStringIntIntSearchSortOrder">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -321,7 +347,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsForCurrentUser">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostComment">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -347,7 +373,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileByIdStringSetOfProfileField">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostNetworkUpdate">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -373,7 +399,85 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileByUrlStringProfileType">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeople">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSendMessage">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testUpdateCurrentStatus">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testDeleteCurrentStatus">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -400,6 +504,32 @@
 </error>
   </testcase>
   <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileForCurrentUserSetOfProfileField">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileByUrlStringProfileType">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -477,6 +607,136 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsByIdStringSetOfProfileField">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsForCurrentUser">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0.001" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdatesSetOfNetworkUpdateType">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdateCommentsString">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileByIdStringSetOfProfileField">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
   <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSendInviteByIdStringStringString">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
@@ -503,7 +763,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeopleMapOfSearchParameterStringIntIntSearchSortOrder">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdateLikesString">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -529,7 +789,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsForCurrentUserSetIntIntDateConnectionModificationType">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testLikePost">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -555,7 +815,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeopleMapOfSearchParameterStringListOfParameterOfFacetTypeString">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostShare">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -581,7 +841,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrder">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testCloseJob">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -607,7 +867,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeopleMapOfSearchParameterStringSetOfProfileFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostJob">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -633,7 +893,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0.001" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchCompaniesMapOfSearchParameterStringSetOfCompanyFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testUpdateJob">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -659,7 +919,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsByIdString">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetCompaniesByEmailDomainStringSetOfCompanyField">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -685,7 +945,33 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsByUrlString">
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetCompanyByUniversalNameStringSetOfCompanyField">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetCompanyProductsStringSetOfProductFieldIntInt">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -919,500 +1205,6 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetCompaniesByEmailDomainStringSetOfCompanyField">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetCompanyByUniversalNameStringSetOfCompanyField">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetCompanyProductsStringSetOfProductFieldIntInt">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testLikePost">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostShare">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testCloseJob">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostJob">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testUpdateJob">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdates">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdatesIntInt">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdatesDateDate">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileByIdString">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetProfileForCurrentUser">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostComment">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testPostNetworkUpdate">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0.001" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeople">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSendMessage">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testUpdateCurrentStatus">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testDeleteCurrentStatus">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
   <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testBookmarkJob">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
@@ -1517,59 +1309,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdateLikesString">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetJobBookmarksSetOfJobField">
-    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
-	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
-	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
-	at junit.framework.TestCase.runBare(TestCase.java:132)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at junit.framework.TestSuite.runTest(TestSuite.java:232)
-	at junit.framework.TestSuite.run(TestSuite.java:227)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
-  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetJobByIdStringSetOfJobField">
+  <testcase time="0.001" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetJobByIdStringSetOfJobField">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
@@ -1674,6 +1414,266 @@
 </error>
   </testcase>
   <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetSuggestedCompaniesSetOfCompanyField">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeopleMapOfSearchParameterStringSetOfProfileFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchCompaniesMapOfSearchParameterStringSetOfCompanyFieldSetOfFacetFieldIntIntSearchSortOrderListOfParameterOfFacetTypeString">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsByIdString">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsByUrlString">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdates">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdatesIntInt">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetNetworkUpdatesDateDate">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testGetConnectionsForCurrentUserSetIntIntDateConnectionModificationType">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0.001" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchPeopleMapOfSearchParameterStringListOfParameterOfFacetTypeString">
+    <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
+	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
+	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="com.google.code.linkedinapi.client.LinkedInApiXppClientTest" name="testSearchJobsMapOfSearchParameterStringSetOfJobFieldIntIntSearchSortOrder">
     <error message="Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class com.google.code.linkedinapi.client.constant.TestConstants
 	at com.google.code.linkedinapi.client.LinkedInApiClientTest.setUp(LinkedInApiClientTest.java:105)
 	at com.google.code.linkedinapi.client.LinkedInApiXppClientTest.setUp(LinkedInApiXppClientTest.java:31)
