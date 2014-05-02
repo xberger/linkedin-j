@@ -194,6 +194,8 @@ public final class LinkedInApiUrls {
         linkedInApiUrls.getProperty("com.google.code.linkedinapi.client.unfollowCompany");
     public static final String GET_COMPANY_STATISTICS = 
     		 linkedInApiUrls.getProperty("com.google.code.linkedinapi.client.getCompanyStatistics");
+    public static final String GET_COMPANY_UPDATES =
+            linkedInApiUrls.getProperty("com.google.code.linkedinapi.client.getCompanyUpdates");    
     public static final String GET_COMPANY_PRODUCTS =
         linkedInApiUrls.getProperty("com.google.code.linkedinapi.client.getCompanyProducts");
     public static final String GET_JOB_BY_ID =

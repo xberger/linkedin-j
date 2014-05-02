@@ -114,6 +114,7 @@ import com.google.code.linkedinapi.schema.SchemaElementFactory;
 import com.google.code.linkedinapi.schema.Share;
 import com.google.code.linkedinapi.schema.UpdateComment;
 import com.google.code.linkedinapi.schema.UpdateComments;
+import com.google.code.linkedinapi.schema.Updates;
 import com.google.code.linkedinapi.schema.Visibility;
 import com.google.code.linkedinapi.schema.VisibilityType;
 import com.google.code.linkedinapi.schema.impl.HttpHeaderImpl;
@@ -2686,6 +2687,16 @@ public abstract class BaseLinkedInApiClient implements LinkedInApiClient {
         return readResponse(CompanyStatistics.class, callApiMethod(apiUrl));
 	}
 
+ 	@Override
+	public Updates getCompanyUpdates(String id) {
+            assertNotNullOrEmpty("id", id);
+
+            LinkedInApiUrlBuilder builder = createLinkedInApiUrlBuilder(LinkedInApiUrls.GET_COMPANY_UPDATES);
+            String                apiUrl  = builder.withEmptyField(ParameterNames.FIELD_SELECTORS).withField(ParameterNames.ID,
+                                                                                    id).buildUrl();
+
+            return readResponse(Updates.class, callApiMethod(apiUrl));
+	}
 
 	@Override
 	public Products getCompanyProducts(String id) {

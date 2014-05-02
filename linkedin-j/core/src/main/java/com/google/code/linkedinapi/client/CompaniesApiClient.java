@@ -32,6 +32,7 @@ import com.google.code.linkedinapi.schema.CompanySearch;
 import com.google.code.linkedinapi.schema.CompanyStatistics;
 import com.google.code.linkedinapi.schema.FacetType;
 import com.google.code.linkedinapi.schema.Products;
+import com.google.code.linkedinapi.schema.Updates;
 
 /**
  * The Interface CompaniesApiClient.
@@ -151,6 +152,15 @@ public interface CompaniesApiClient extends LinkedInAuthenticationClient {
 	 */
 	public CompanyStatistics getCompanyStatistics(String id);
 	
+ 	/**
+	 * Gets the company updates.
+	 * 
+	 * @param id the id
+	 * 
+	 * @return the company products
+	 */
+	public Updates getCompanyUpdates(String id);
+
 	/**
 	 * Gets the company products.
 	 * 
