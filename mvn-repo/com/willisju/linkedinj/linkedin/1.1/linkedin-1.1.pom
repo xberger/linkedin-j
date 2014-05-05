@@ -34,7 +34,6 @@
 	<tag>HEAD</tag>
   </scm>
   
-  <!--
 	<distributionManagement>  
 		<repository>  
 			<id>repo.willisju.linkedinj</id>  
@@ -42,7 +41,7 @@
 			<url>${repoPath}</url>  
 		</repository>  
 	</distributionManagement>
-	-->
+	
   <developers>
     <developer>
       <name>Nabeel Mukhtar</name>

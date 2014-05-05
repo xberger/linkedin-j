@@ -42,6 +42,6 @@ __Please note:__ Refer to [Oringinal Wiki](https://code.google.com/p/linkedin-j/
     <dependency>
 	  <groupId>com.willisju.linkedinj</groupId>
       <artifactId>linkedin-j-core</artifactId>
-      <version>1.0</version>
+      <version>1.1</version>
 	</dependency>
 
