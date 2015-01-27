@@ -3,7 +3,7 @@
   
 	<groupId>com.willisju.linkedinj</groupId>
     <artifactId>linkedin</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>LinkedIn-J</name>
 	
@@ -14,8 +14,19 @@
 		<localRepoPath></localRepoPath>
 		<javaVersion>1.7</javaVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <javadoc.additional-param></javadoc.additional-param>
     </properties>
-	
+    <profiles>
+     <profile>
+          <id>jdk18</id>
+          <activation>
+                  <jdk>1.8</jdk>
+          </activation>
+          <properties>
+              <javadoc.additional-param>-Xdoclint:none</javadoc.additional-param>
+          </properties>
+      </profile>
+  </profiles>	
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -94,7 +105,7 @@
 			<artifactId>maven-javadoc-plugin</artifactId>
                         <version>2.10.1</version>
 			<configuration>
-                            <additionalparam>-Xdoclint:none</additionalparam>
+                            <additionalparam>${javadoc.additional-param}</additionalparam>
                         </configuration>
                         <executions>
 				<execution>
