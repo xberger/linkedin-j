@@ -44,10 +44,11 @@ import com.google.code.linkedinapi.client.LinkedInApiClientException;
 import com.google.code.linkedinapi.client.Parameter;
 import com.google.code.linkedinapi.client.constant.ApplicationConstants;
 import com.google.code.linkedinapi.client.constant.LinkedInApiUrls;
-import com.google.code.linkedinapi.client.constant.ParameterNames;
 import com.google.code.linkedinapi.client.constant.LinkedInApiUrls.LinkedInApiUrlBuilder;
+import com.google.code.linkedinapi.client.constant.ParameterNames;
 import com.google.code.linkedinapi.client.enumeration.CommentField;
 import com.google.code.linkedinapi.client.enumeration.CompanyField;
+import com.google.code.linkedinapi.client.enumeration.CompanyUpdateType;
 import com.google.code.linkedinapi.client.enumeration.ConnectionModificationType;
 import com.google.code.linkedinapi.client.enumeration.FacetField;
 import com.google.code.linkedinapi.client.enumeration.GroupField;
@@ -109,15 +110,14 @@ import com.google.code.linkedinapi.schema.Post;
 import com.google.code.linkedinapi.schema.PostCategoryCode;
 import com.google.code.linkedinapi.schema.Posts;
 import com.google.code.linkedinapi.schema.Products;
-import com.google.code.linkedinapi.schema.Recipient;
 import com.google.code.linkedinapi.schema.SchemaElementFactory;
 import com.google.code.linkedinapi.schema.Share;
+import com.google.code.linkedinapi.schema.Update;
 import com.google.code.linkedinapi.schema.UpdateComment;
 import com.google.code.linkedinapi.schema.UpdateComments;
 import com.google.code.linkedinapi.schema.Updates;
 import com.google.code.linkedinapi.schema.Visibility;
 import com.google.code.linkedinapi.schema.VisibilityType;
-import com.google.code.linkedinapi.schema.impl.HttpHeaderImpl;
 import com.google.code.linkedinapi.schema.impl.RecipientImpl;
 
 /**
@@ -2698,6 +2698,49 @@ public abstract class BaseLinkedInApiClient implements LinkedInApiClient {
             return readResponse(Updates.class, callApiMethod(apiUrl));
 	}
 
+ 	@Override
+	public Updates getCompanyUpdates(String id, CompanyUpdateType companyUpdateType) {
+            assertNotNullOrEmpty("id", id);
+            assertNotNull("eventType", companyUpdateType);
+
+            LinkedInApiUrlBuilder builder = createLinkedInApiUrlBuilder(LinkedInApiUrls.GET_COMPANY_UPDATES);
+            String                apiUrl  = builder.withEmptyField(ParameterNames.FIELD_SELECTORS)
+            										.withField(ParameterNames.ID, id)
+            										.withParameter(ParameterNames.EVENT_TYPE, companyUpdateType.fieldName())
+                                                    .buildUrl();
+            return readResponse(Updates.class, callApiMethod(apiUrl));
+	}
+
+ 	@Override
+	public Updates getCompanyUpdates(String id, CompanyUpdateType companyUpdateType, int start, int count) {
+            assertNotNullOrEmpty("id", id);
+            assertNotNull("eventType", companyUpdateType);
+            assertPositiveNumber("start", start);
+            assertPositiveNumber("count", count);
+
+            LinkedInApiUrlBuilder builder = createLinkedInApiUrlBuilder(LinkedInApiUrls.GET_COMPANY_UPDATES);
+            String                apiUrl  = builder.withEmptyField(ParameterNames.FIELD_SELECTORS)
+            										.withField(ParameterNames.ID, id)
+            										.withParameter(ParameterNames.EVENT_TYPE, companyUpdateType.fieldName())
+            										.withParameter(ParameterNames.START, String.valueOf(start))
+            										.withParameter(ParameterNames.COUNT, String.valueOf(count))
+                                                    .buildUrl();
+            return readResponse(Updates.class, callApiMethod(apiUrl));
+	}
+
+ 	@Override
+ 	public Update getCompanyUpdate(String id, String companyUpdateKey) {
+            assertNotNullOrEmpty("id", id);
+            assertNotNullOrEmpty("companyUpdateKey", companyUpdateKey);
+
+            LinkedInApiUrlBuilder builder = createLinkedInApiUrlBuilder(LinkedInApiUrls.GET_COMPANY_UPDATE);
+            String                apiUrl  = builder.withEmptyField(ParameterNames.FIELD_SELECTORS)
+            										.withField(ParameterNames.ID, id)
+            										.withField(ParameterNames.COMPANY_UPDATE_KEY, companyUpdateKey)
+                                                    .buildUrl();
+            return readResponse(Update.class, callApiMethod(apiUrl));
+	}
+ 	
 	@Override
 	public Products getCompanyProducts(String id) {
         assertNotNullOrEmpty("id", id);
@@ -3797,7 +3840,7 @@ public abstract class BaseLinkedInApiClient implements LinkedInApiClient {
     }
 
     /**
-     *
+     *	Read calls
      *
      * @param apiUrl
      * @param expected
@@ -3806,6 +3849,9 @@ public abstract class BaseLinkedInApiClient implements LinkedInApiClient {
      * @return
      */
     protected InputStream callApiMethod(String apiUrl, int expected, List<HttpHeader> httpHeaders) {
+    	if (ApplicationConstants.DEBUG_OUTPUT_REQUEST) {
+    		LOG.log(Level.INFO, "Send API call: " + apiUrl);
+    	}
         try {
             LinkedInOAuthService oAuthService =
                 LinkedInOAuthServiceFactory.getInstance().createLinkedInOAuthService(apiConsumer.getConsumerKey(),
@@ -3848,7 +3894,7 @@ public abstract class BaseLinkedInApiClient implements LinkedInApiClient {
     }
 
     /**
-     *
+     *	Write calls
      *
      * @param apiUrl
      * @param xmlContent
@@ -3860,6 +3906,10 @@ public abstract class BaseLinkedInApiClient implements LinkedInApiClient {
      */
     protected InputStream callApiMethod(String apiUrl, String xmlContent, String contentType, HttpMethod method,
             int expected) {
+    	if (ApplicationConstants.DEBUG_OUTPUT_REQUEST) {
+    		// no output of xmlContent at the moment 
+    		LOG.log(Level.INFO, "Send API call " + method.fieldName() + ": " + apiUrl); 
+    	}
         try {
             LinkedInOAuthService oAuthService =
                 LinkedInOAuthServiceFactory.getInstance().createLinkedInOAuthService(apiConsumer.getConsumerKey(),

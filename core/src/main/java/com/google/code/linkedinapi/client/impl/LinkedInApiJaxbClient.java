@@ -15,8 +15,11 @@
  * 
  */
 package com.google.code.linkedinapi.client.impl;
+import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -24,7 +27,9 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
+import com.fanpagekarma.util.FormatUtils;
 import com.google.code.linkedinapi.client.LinkedInApiClientException;
+import com.google.code.linkedinapi.client.constant.ApplicationConstants;
 import com.google.code.linkedinapi.client.constant.LinkedInApiUrls.LinkedInApiUrlBuilder;
 import com.google.code.linkedinapi.schema.ObjectFactory;
 import com.google.code.linkedinapi.schema.SchemaElementFactory;
@@ -43,6 +48,9 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
     
     /** Do not access directly. It may be null!!!. Use {@link #getJaxbContext()} */
     private static JAXBContext JAXB_CONTEXT;
+    
+    /** The static logger. */
+    protected final Logger LOG = Logger.getLogger(getClass().getCanonicalName());
 
     /**
      * Constructs ...
@@ -54,7 +62,7 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
     public LinkedInApiJaxbClient(String consumerKey, String consumerSecret) {
         super(consumerKey, consumerSecret);
     }
-
+    
     /**
      * Method description
      *
@@ -68,8 +76,16 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
     protected <T> T unmarshallObject(Class<T> clazz, InputStream xmlContent) {
         try {
             Unmarshaller u  = getJaxbContext().createUnmarshaller();
-
-            return (T) u.unmarshal(xmlContent);
+            
+            if (ApplicationConstants.DEBUG_OUTPUT_RESPONSE) {
+	            byte[] byteArray= FormatUtils.inputStreamToByteArray(xmlContent);
+	            LOG.log(Level.INFO, "Receive API answer for " + clazz.getSimpleName() + " [start]");
+            	LOG.log(Level.INFO, new String(byteArray));
+	            LOG.log(Level.INFO, "Receive API answer for " + clazz.getSimpleName() + "  [end]");
+	            return (T) u.unmarshal(new ByteArrayInputStream(byteArray));
+            } else {
+            	return (T) u.unmarshal(xmlContent);
+            }
         } catch (JAXBException e) {
             throw new LinkedInApiClientException(e);
         }
