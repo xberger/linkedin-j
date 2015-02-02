@@ -79,6 +79,12 @@ public final class ApplicationConstants {
     
     /** The Constant AUTH_HEADER_NAME. */
     public static final String EXPIRATION_PARAMETER_NAME = getProperty("com.google.code.linkedinapi.client.expirationParameterName");
+
+    /** The Constant DEBUG_OUTPUT_REQUEST. */
+    public static final boolean DEBUG_OUTPUT_REQUEST = getBooleanProperty("com.google.code.linkedinapi.client.debugOutputRequest");
+    
+    /** The Constant DEBUG_OUTPUT_RESPONSE. */
+    public static final boolean DEBUG_OUTPUT_RESPONSE = getBooleanProperty("com.google.code.linkedinapi.client.debugOutputResponse");
     
     /**
      * Instantiates a new application constants.

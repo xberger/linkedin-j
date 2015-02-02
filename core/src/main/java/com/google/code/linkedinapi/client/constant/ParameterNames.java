@@ -46,5 +46,7 @@ public interface ParameterNames {
 	String ORDER = "order";
 	String CATEGORY = "category";
 	String ROLE = "role";
-
+	String EVENT_TYPE = "event-type";
+	String COMPANY_UPDATE_KEY = "companyUpdateKey";
+	
 }

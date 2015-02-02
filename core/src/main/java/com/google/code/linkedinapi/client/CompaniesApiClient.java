@@ -22,6 +22,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.google.code.linkedinapi.client.enumeration.CompanyField;
+import com.google.code.linkedinapi.client.enumeration.CompanyUpdateType;
 import com.google.code.linkedinapi.client.enumeration.FacetField;
 import com.google.code.linkedinapi.client.enumeration.ProductField;
 import com.google.code.linkedinapi.client.enumeration.SearchParameter;
@@ -32,6 +33,7 @@ import com.google.code.linkedinapi.schema.CompanySearch;
 import com.google.code.linkedinapi.schema.CompanyStatistics;
 import com.google.code.linkedinapi.schema.FacetType;
 import com.google.code.linkedinapi.schema.Products;
+import com.google.code.linkedinapi.schema.Update;
 import com.google.code.linkedinapi.schema.Updates;
 
 /**
@@ -161,6 +163,33 @@ public interface CompaniesApiClient extends LinkedInAuthenticationClient {
 	 */
 	public Updates getCompanyUpdates(String id);
 
+ 	/**
+	 * Gets the company updates of the eventType.
+	 * 
+	 * @param id the id
+	 * 
+	 * @return the company products
+	 */
+	public Updates getCompanyUpdates(String id, CompanyUpdateType companyUpdateType);
+
+ 	/**
+	 * Gets the company updates of the eventType.
+	 * 
+	 * @param id the id
+	 * 
+	 * @return the company products
+	 */
+	public Updates getCompanyUpdates(String id, CompanyUpdateType companyUpdateType, int start, int count);
+	
+ 	/**
+	 * Gets a company update (more comments/likes available than bulk operation).
+	 * 
+	 * @param id the id
+	 * 
+	 * @return the company products
+	 */
+	public Update getCompanyUpdate(String id, String companyUpdateKey);
+	
 	/**
 	 * Gets the company products.
 	 * 
@@ -168,8 +197,6 @@ public interface CompaniesApiClient extends LinkedInAuthenticationClient {
 	 * 
 	 * @return the company products
 	 */
-	
-	
 	public Products getCompanyProducts(String id);
 	
 	/**
