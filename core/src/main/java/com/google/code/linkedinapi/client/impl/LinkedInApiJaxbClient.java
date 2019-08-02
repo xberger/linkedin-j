@@ -16,6 +16,8 @@
  */
 package com.google.code.linkedinapi.client.impl;
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.util.logging.Level;
@@ -27,7 +29,6 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import com.fanpagekarma.util.FormatUtils;
 import com.google.code.linkedinapi.client.LinkedInApiClientException;
 import com.google.code.linkedinapi.client.constant.ApplicationConstants;
 import com.google.code.linkedinapi.client.constant.LinkedInApiUrls.LinkedInApiUrlBuilder;
@@ -72,17 +73,18 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
      *
      * @return
      */
+    @Override
     @SuppressWarnings("unchecked")
     protected <T> T unmarshallObject(Class<T> clazz, InputStream xmlContent) {
         try {
             Unmarshaller u  = getJaxbContext().createUnmarshaller();
             
             if (ApplicationConstants.DEBUG_OUTPUT_RESPONSE) {
-	            byte[] byteArray= FormatUtils.inputStreamToByteArray(xmlContent);
-	            LOG.log(Level.INFO, "Receive API answer for " + clazz.getSimpleName() + " [start]");
-            	LOG.log(Level.INFO, new String(byteArray));
-	            LOG.log(Level.INFO, "Receive API answer for " + clazz.getSimpleName() + "  [end]");
-	            return (T) u.unmarshal(new ByteArrayInputStream(byteArray));
+                byte[] byteArray = inputStreamToByteArray(xmlContent);
+                LOG.log(Level.INFO, "Receive API answer for " + clazz.getSimpleName() + " [start]");
+                LOG.log(Level.INFO, new String(byteArray));
+                LOG.log(Level.INFO, "Receive API answer for " + clazz.getSimpleName() + "  [end]");
+                return (T) u.unmarshal(new ByteArrayInputStream(byteArray));
             } else {
             	return (T) u.unmarshal(xmlContent);
             }
@@ -99,6 +101,7 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
      *
      * @return
      */
+    @Override
     protected String marshallObject(Object element) {
         try {
             StringWriter writer = new StringWriter();
@@ -117,6 +120,7 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
      *
      * @return
      */
+    @Override
     protected SchemaElementFactory<?> createObjectFactory() {
     	return OBJECT_FACTORY;
     }
@@ -129,6 +133,7 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
      *
      * @return
      */
+    @Override
     protected LinkedInApiUrlBuilder createLinkedInApiUrlBuilder(String urlFormat) {
         return new LinkedInApiUrlBuilder(urlFormat);
     }
@@ -162,4 +167,21 @@ public class LinkedInApiJaxbClient extends BaseLinkedInApiClient {
 	public JobBuilder newJobBuilder() {
 		return new JobBuilderImpl(OBJECT_FACTORY);
 	}
+
+	private static byte[] inputStreamToByteArray(InputStream is) {
+		ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+		int nRead;
+		byte[] data = new byte[16384];
+		try {
+			while ((nRead = is.read(data, 0, data.length)) != -1) {
+				buffer.write(data, 0, nRead);
+			}
+			buffer.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+		return buffer.toByteArray();
+	}
+
 }
